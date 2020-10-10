@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+              integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+              crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+              integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+              crossorigin="anonymous">
+
+        <title>Gold Stainless Steel Case with Leather Link - Apple</title>
+        <style>
+            .nav {
+                justify-content: center;
+                background-color: #333333;
+                width: 100%;
+                display: flex;
+                height: 43px;
+            }
+
+            .nav-item {
+                background-color: #333333;
+                width: 70px;
+                height: 100%;
+                margin-left: 20px;
+                margin-right: 20px;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .nav-item-apple {
+                height: 43px;
+                padding-bottom: 5px;
+            }
+
+            .nav-link {
+                height: 100%;
+                align-items: end;
+                color: #b3b3b3;
+            }
+
+            .wrap {
+                margin: auto;
+                width: 979px;
+                height: 100%;
+                grid-template-columns: 1fr 1fr;
+                display: grid;
+            }
+
+            .header {
+                display: block;
+                justify-content: left;
+            }
+
+            .header-title {
+                margin: 15px 0px 0px 200px;
+                font-size: 20px;
+            }
+
+            .sub-header-text {
+                padding: 8px 0px 0px 240px;
+                height: 30px;
+                width: 100%;
+                font-size: 8px;
+                margin: 5px 0px 0px 0px;
+                background-color: #f2f2f2;
+                border-top: #cfcfcf 1px solid;
+            }
+
+
+            .grid-left {
+                display: flex;
+                width: 571px;
+                height: 527px;
+                margin-right: 0px;
+            }
+
+            .grid-right {
+                display: inline;
+                flex-direction: column;
+                margin-bottom: 50px;
+            }
+
+            .image-watch {
+                width: 450px;
+                height: 450px;
+                align-content: center;
+                margin: 50px 0px 70px 50px;
+            }
+
+            .grid-right-watch {
+                width: 408px;
+                margin-top: 20px;
+                display: block;
+                font-weight: bold;
+            }
+
+            .grid-right-model {
+                font-weight: bold;
+                font-size: 25px;
+            }
+
+            .cost {
+                font-size: 20px;
+                display: block;
+            }
+
+            .massage {
+                margin: 10px 0px 10px 0px;
+                display: block;
+            }
+
+            .mb-3 {
+                margin-top: 30px;
+            }
+
+            .btn-primary {
+                display: flex;
+                margin: auto;
+            }
+
+            .change {
+                color: blue;
+            }
+
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            function CheckSelect() {
+                let A = []
+                A.push($('#input-text-name').val())
+                A.push($('#input-text-address').val())
+                A.push($('#input-text-phonenumber').val())
+
+                if ($('#inputGroupSelect01 option:selected').val() == 'Choose...') {
+                    alert('Choose size')
+                } else if (A[0].length == 0) {
+                    alert('Put your Name')
+                } else if (A[1].length == 0) {
+                    alert('Put your Address')
+                } else if (A[2].length != 13) {
+                    alert('휴대폰번호 입력 형식이 틀립니다\n010-0000-0000 으로 입력해주세요')
+                } else {
+                    alert('주문이 완료되었습니다')
+                }
+            }
+
+            function change() {
+                {
+                    $.ajax({
+                        type: "GET",
+                        url: " https://api.manana.kr/exchange/rate.json",
+                        data: {},
+                        success: function (response) {
+                            CH = response[1]["rate"];
+                            $('#change').append(`<span>${CH}</span>`);
+
+                        }
+                    })
+                }
+            }
+
+            window.onload = change()
+
+
+        </script>
+    </head>
+    <body>
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                crossorigin="anonymous"></script>
+    </body>
+</html>
+<body>
+
+    <div class="N">
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link1" href="#"><img class="nav-item-apple"
+                                                   src="applelogo.png"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Mac </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">iPad</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">iPhone</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Watch</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-shopping-bag"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="header">
+        <h3 class="header-title">Apple Watch series 6</h3>
+
+        <div class="sub-header-text">Pay for your new Apple Watch over 24 months at 0% APR with Apple Card. Just apply
+            for Apple Card Monthly Installments when you check out. <a href="#">Learn more ></a></div>
+
+    </div>
+    <div class="wrap">
+
+        <span class="grid-left">
+        <img class="image-watch"
+             src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/MY982_VW_34FR+watch-40-stainless-gold-cell-6s_VW_34FR_WF_CO?wid=1400&hei=1400&trim=1,0&fmt=p-jpg&qlt=80&op_usm=0.5,0.5&.v=1599269329000,1599538079000">
+        </span>
+        <span class="grid-right">
+            <span class="grid-right-watch"><span>Apple watch</span></span>
+            <span class="grid-right-model"><span>Gold Stainless Steel Case with Leather Link</span></span>
+            <span class="cost">From $31.20/mo.* or $749</span>
+            <span class="massage">The stainless steel case is durable and polished to a shiny, mirror-like finish.</span>
+            <span class="massage">The Leather Link is made from handcrafted Roux Granada leather with no clasps or buckles,
+            and has embedded magnets for a secure and adjustable fit.</span>
+            <span id="change" class="change">
+                <span> 환율 :</span>
+
+            </span>
+
+        <span class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Options</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">40mm</option>
+                <option value="2">44mm</option>
+            </select>
+        </span>
+        <span class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Name</span>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Username"
+                   aria-describedby="basic-addon1" id="input-text-name">
+        </span>
+        <span class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Address</span>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Username"
+                   aria-describedby="basic-addon1" id="input-text-address">
+        </span>
+        <span class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Phone Number</span>
+            </div>
+            <input type="text" class="form-control" placeholder="" aria-label="Username"
+                   aria-describedby="basic-addon1" id="input-text-phonenumber">
+        </span>
+        <button type="button" class="btn btn-primary" onclick="CheckSelect()">Order</button>
+
+
+
+
+</span>
+    </div>
+</body>
+</html>
